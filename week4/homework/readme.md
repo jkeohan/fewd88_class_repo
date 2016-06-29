@@ -1,5 +1,4 @@
-Homework
+Homework for Week 4
 
-1. Final Project: proposal and wireframes
-2. GA Dash - special attention to projects 3 - 5
-3. Complete any unfinished HW
+1. Color Theme Switcher
+2. Complete any unfinished HW
