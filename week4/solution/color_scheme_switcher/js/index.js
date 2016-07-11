@@ -11,3 +11,12 @@ function switchWhite() {
   document.body.style.color = 'black';
 }
 
+// $('#grayButton').click(function() {
+// 	$('body').css('backgroundColor','gray')
+// 	$('body').css('color','white');
+// });
+// $('#whiteButton').click(function() {
+// 	$('body').css('backgroundColor','white');
+// 	$('body').css('color','gray');
+// });
+
