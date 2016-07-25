@@ -12,8 +12,11 @@
 //    Use the .addClass() method to add this variable as a class to <body>
 
 // Bonus 1: Apply the concept of $(this) - think about what element is causing .change() to fire
+//var city = $(this).val();
 // Bonus 2: Instead of using .removeClass and .addClass, use only .toggleClass on <body>
-//          Hint: you may have to use the .attr() method to grab the current class on <body>
+//      Hint: you may have to use the .attr() method to grab the current class on <body>
+//   var previousCity = $('body').attr('class')
+//   $('body').toggleClass(b + " " + currentCity)
 
 
 
@@ -23,12 +26,18 @@ $(document).ready(function() {
 	$('#city-type').change(function () {
 
 		// 4
-		var city = $('#city-type').val();
+		var currentCity = $(this).val();
 
 		// 5
-		$('body').removeClass();
+		// $('body').removeClass();
 
 		// 6
-		$('body').addClass(city)
+		// $('body').addClass(city)
+
+    //B1
+
+    //B2
+    var previousCity = $('body').attr('class')
+    $('body').toggleClass(previousCity + " " + currentCity)
 	});
 });
