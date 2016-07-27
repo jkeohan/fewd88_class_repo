@@ -9,40 +9,27 @@ body {
 	max-width: 1280px;
 	margin: auto;
 }
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
+
 h1 {
 	font-size: 2em;
 	line-height: 1;
 }
+
 h2 {
 	font-size: 1.5em;
 	font-weight: bold;
 }
+
 h3 {
 	font-family: 'Merriweather', serif;
 	font-size: 1.25em;
 	font-weight: bold;
 }
+
 p {
 	margin: 0 0 1.5em 0;
 }
-nav .line{
-	width: 3em;
-	height: .3em;
-	background: yellow;
-	border-radius: 1em;
-	margin-top: .25em;
-}
-nav .line:first-of-type{
-	margin-top:.7em;
-}
+
 .button {
 	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
@@ -65,10 +52,12 @@ nav .line:first-of-type{
 	border-bottom: 4px solid yellow;
 	padding: 0 3%;
 }
+
 #page-header a {
 	color: inherit;
 	text-decoration: none;
 }
+
 #page-header h1 {
 	float: left;
 	color: yellow;
@@ -76,31 +65,32 @@ nav .line:first-of-type{
 	font-size: 1.5em;
 	margin: 20px 0 0 0;
 }
+
 #page-header nav {
 	float: right;
 }
+
 #page-header nav li {
 	float: left;
 }
-#page-header nav li:first-child{
-	float:right;
-	display: none;
-	cursor: pointer;
-}
+
 #page-header nav a {
 	display: block;
-	padding: 20px 10px;
+	padding: 20px 15px;
 }
+
 #page-header nav li a:hover {
 	color: yellow;
 }
+
+#page-header nav li.active a {
+	background: #666;
+}
+
 #page-header nav strong {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
 }
-#page-header nav strong a {
-}
-
 
 .tagline {
 	font-family: 'Merriweather', serif;
@@ -113,9 +103,11 @@ nav .line:first-of-type{
 	background: #C6C6C6;
 	border-top: 1px solid #AAA;
 }
+
 .tagline del {
 	color: #999;
 }
+
 .tagline ins {
 	text-decoration: none;
 	border-bottom: 3px solid yellow;
@@ -136,26 +128,26 @@ nav .line:first-of-type{
 	padding: 4%;
 	float: right;
 	box-shadow: 0 0 5px rgba(0,0,0,.75);
-	transition: width 500ms;
 }
-.blurb > p:first-of-type{
-	margin-bottom:0;
-}
+
 .touts {
 	background: #EEE;
 	background: white;
 	overflow: hidden;
 	padding: 2% 0;
 }
+
 .tout {
 	float: left;
 	width: 27.3333%;
 	padding: 2% 3%;
 	box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
 }
+
 .tout:last-child {
 	box-shadow: none;
 }
+
 .tout .button {
 	background: #C6C6C6;
 }
@@ -164,50 +156,4 @@ footer {
 	background: black;
 	color: white;
 	padding: 2% 3%;
-}
-@media screen and (max-width:1080px) and (min-width: 980px){
-	nav{
-
-		font-size: 18px;
-	}
-}
-@media screen and (max-width:980px) and (min-width: 768px){
-	nav{
-		font-size: 12px;
-	}
-}
-@media screen and (max-width: 768px){
-	body{
-		font-size: 16px;
-	}
-	nav{
-		width:100%;
-	}
-	.tagline,.blurb > p:first-of-type{
-		display: none;
-	}
-	.blurb{
-		width:60%;
-	}
-	.tout{
-		width:94%;
-		box-shadow: none;
-	}
-	#page-header nav li{
-		float: none;
-	}
-	#page-header nav li:first-child{
-		display:block;
-		position: absolute;
-		top:.25em;
-		right:.5em;
-	}
-	ul{
-		height:0;
-		transition:height 1s;
-		overflow: hidden;
-	}
-}
-.slideDown{
-	height:20em;
 }
