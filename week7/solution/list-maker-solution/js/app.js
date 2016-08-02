@@ -39,6 +39,8 @@ $(document).ready(function () {
 
 	// removes dynamically-created <li> elements on click
 	$(document).on('click', 'li', function () {
+		console.log(this)
+		debugger;
 		$(this).remove();
 	})
 
